@@ -17,11 +17,12 @@ export default function Headers() {
 					onClick={() =>
 						window.scroll({
 							top: 0,
+							left: 0,
 							behavior: 'smooth',
 						})
 					}
 				>
-					<Olimpo color="#14222B" size="4rem" />
+					<Olimpo color={"#14222B"} size={"3rem"} />
 				</button>
 
 				<nav>

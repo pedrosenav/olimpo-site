@@ -18,7 +18,7 @@ export default function SectionPrincipal() {
 			>
 				<div className="px-10 h-full">
 					<div className="h-full flex-col max-w-[98rem]  mx-auto gap-10 flex justify-center items-start">
-						<h1 className="max-w-lg font-bold text-5xl text-slate-100">
+						<h1 className="max-w-lg font-bold xs:text-5xl text-3xl text-slate-100">
 							A Olimpo tem o compromisso em deixa o cliente satisfeito!
 						</h1>
 

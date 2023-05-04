@@ -55,7 +55,7 @@ export default function SectionVantagens() {
 			}}
 		>
 			<div className="max-w-[98rem] w-full flex flex-col gap-12">
-				<h2 className="text-5xl font-semibold text-olimpo_blue">
+				<h2 className="text-4xl font-semibold text-olimpo_blue">
 					Por que contratar a Olimpo?
 				</h2>
 
