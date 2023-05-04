@@ -6,14 +6,14 @@ export default function SectionPrincipal() {
 				backgroundImage: 'url(/moca-presente-75x.png)',
 				backgroundRepeat: 'no-repeat',
 				backgroundSize: 'cover',
-				backgroundPosition: 'center',
+				backgroundPosition: 'center top',
 			}}
 		>
 			<div
 				className="h-full"
 				style={{
 					backgroundImage:
-						'linear-gradient(76.67deg, rgba(20, 34, 43, 0.6) 32.72%, rgba(20, 34, 43, 0) 50.03%)',
+						'linear-gradient(90deg, rgba(20, 34, 43, 0.75) 2%, rgba(20, 34, 43, 0) 72%)',
 				}}
 			>
 				<div className="px-10 h-full">
@@ -25,7 +25,7 @@ export default function SectionPrincipal() {
 						<button
 							className="px-7 py-3 font-bold rounded-lg cursor-pointer
 				 bg-olimpo_yellow text-white 
-				 hover:bg-olimpo_blue transition-colors"
+				 hover:bg-olimpo_blue transition-colors tracking-wider"
 						>
 							Simule já
 						</button>

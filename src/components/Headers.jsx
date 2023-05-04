@@ -1,3 +1,4 @@
+import { List } from '@phosphor-icons/react'
 import Olimpo from './widgets/Olimpo'
 
 export default function Headers() {
@@ -9,18 +10,31 @@ export default function Headers() {
 	]
 
 	return (
-		<header className="min-w-full shadow-lg bg-slate-100 flex justify-center items-center px-10 p-2 fixed top-0">
+		<header className="min-w-full shadow-lg bg-slate-100 flex justify-center items-center sm:px-10 px-5 p-2 fixed top-0 z-10">
 			<div className="w-full max-w-[98rem] flex justify-between items-center">
-				<Olimpo color="#14222B" size="4rem" />
+				<button
+					className="cursor-pointer"
+					onClick={() =>
+						window.scroll({
+							top: 0,
+							behavior: 'smooth',
+						})
+					}
+				>
+					<Olimpo color="#14222B" size="4rem" />
+				</button>
 
 				<nav>
-					<ul className="flex gap-10 text-olimpo_blue text-base font-normal">
+					<ul className="hidden sm:flex gap-10 text-olimpo_blue text-base font-normal">
 						{sections.map((section) => (
 							<li key={section.id}>
 								<a href={section.link}>{section.title}</a>
 							</li>
 						))}
 					</ul>
+				</nav>
+				<nav className="sm:hidden gap-10 text-olimpo_blue text-base font-normal cursor-pointer">
+					<List size={40} />
 				</nav>
 			</div>
 		</header>

@@ -1,13 +1,8 @@
-import {
-	Bank,
-	CheckCircle,
-	CurrencyCircleDollar,
-	Headset,
-} from '@phosphor-icons/react'
+import { Bank, CurrencyCircleDollar, Headset } from '@phosphor-icons/react'
 
 function CardVantagem({ title, content, icon }) {
 	return (
-		<div className="shadow-lg hover:shadow-xl transition-shadow rounded-2xl p-6 flex max-w-xs min-h-[18rem] h-fit bg-slate-100 hover:scale-105 transition-transform">
+		<div className="shadow-lg hover:shadow-xl transition-all rounded-2xl p-6 flex max-w-xs min-h-[18rem] h-fit bg-slate-100 hover:scale-105">
 			<div className="flex flex-col gap-8">
 				<div className="flex justify-between">
 					<h3 className="font-medium text-olimpo_blue text-3xl">{title}</h3>
@@ -22,41 +17,52 @@ function CardVantagem({ title, content, icon }) {
 }
 
 export default function SectionVantagens() {
+	const cards = [
+		{
+			id: 'suporte',
+			title: 'Suporte',
+			content: 'Atendimento totalmente humanizado, com suporte 24 horas',
+			icon: <Headset weight={'fill'} size={40} color={'#E4AA15'} />,
+		},
+
+		{
+			id: 'taxas-flexiveis',
+			title: 'Taxas flexíveis',
+			content:
+				'Buscando sempre os menores juros e as melhores taxas para o cliente',
+
+			icon: (
+				<CurrencyCircleDollar weight={'fill'} size={40} color={'#E4AA15'} />
+			),
+		},
+
+		{
+			id: 'parceria',
+			title: 'Parceria',
+			content: 'Parceria comprovada com os 16 maiores bancos do Brasil',
+			icon: <Bank weight={'fill'} size={40} color={'#E4AA15'} />,
+		},
+	]
+
 	return (
 		<section
 			className="bg-slate-200 min-h-[53rem] h-fit p-10 flex justify-center items-center"
 			style={{
 				backgroundImage: 'url(/atendente-olimpo-75x.png)',
 				backgroundRepeat: 'no-repeat',
-				backgroundSize: 'cover',
-				backgroundPosition: 'contain',
+				backgroundSize: 'auto',
+				backgroundPosition: 'center bottom',
 			}}
 		>
-			<div className="max-w-[98rem] w-full flex flex-col gap-10">
+			<div className="max-w-[98rem] w-full flex flex-col gap-12">
 				<h2 className="text-5xl font-semibold text-olimpo_blue">
-					Por que contratar a olimpo?
+					Por que contratar a Olimpo?
 				</h2>
 
 				<div className="max-w-fit gap-8 grid grid-cols-1 md:grid-cols-2">
-					<CardVantagem
-						title={'Suporte'}
-						content={'Atendimento totalmente humanizado, com suporte 24 horas!'}
-						icon={<Headset weight={'fill'} size={40} color={'#E4AA15'} />}
-					/>
-
-					<CardVantagem
-						title={'Taxas flexíveis'}
-						content={
-							'Buscando sempre os menores juros e as melhores taxas para o cliente.'
-						}
-						icon={<CurrencyCircleDollar weight={'fill'} size={40} color={'#E4AA15'} />}
-					/>
-
-					<CardVantagem
-						title={'Parceria'}
-						content={'Parceria comprovada com os 16 maiores bancos do Brasil'}
-						icon={<Bank weight={'fill'} size={40} color={'#E4AA15'} />}
-					/>
+					{cards.map((card) => (
+						<CardVantagem key={card.id} {...card} />
+					))}
 				</div>
 			</div>
 		</section>

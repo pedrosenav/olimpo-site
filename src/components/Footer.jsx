@@ -96,12 +96,7 @@ export default function Footer() {
 							<h3 className="font-medium text-xl pb-4">{list.title}</h3>
 							<ul className="flex flex-col gap-2 text-slate-400 ">
 								{list.items.map((item) => (
-									<FooterItem
-										key={item.id}
-										content={item.content}
-										link={item.link}
-										icon={item.icon}
-									/>
+									<FooterItem {...item} />
 								))}
 							</ul>
 						</li>
