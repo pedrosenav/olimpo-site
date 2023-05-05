@@ -3,3 +3,30 @@
 @tailwind base;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+	--olimpo_yellow: #e4aa15;
+	--olimpo_blue: #14222b;
+}
+
+details summary {
+	list-style-type: none;
+} /* Firefox */
+
+details summary::-webkit-details-marker {
+	display: none;
+} /* Chrome */
+
+details summary::marker {
+	display: none;
+}
+
+*:focus {
+	outline: none;
+	/* outline: 1px solid var(--olimpo_yellow); */
+}
+
+::selection {
+	color: var(--olimpo_blue);
+	background: #e5aa1550;
+}

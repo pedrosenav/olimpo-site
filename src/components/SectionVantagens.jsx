@@ -2,7 +2,7 @@ import { Bank, CurrencyCircleDollar, Headset } from '@phosphor-icons/react'
 
 function CardVantagem({ title, content, icon }) {
 	return (
-		<div className="shadow-lg hover:shadow-xl transition-all rounded-2xl p-6 flex max-w-xs min-h-[18rem] h-fit bg-slate-100 hover:scale-105">
+		<div className="shadow-lg hover:shadow-xl transition-all rounded-2xl p-6 flex max-w-xs min-h-[18rem] h-fit bg-white hover:scale-105">
 			<div className="flex flex-col gap-8">
 				<div className="flex justify-between">
 					<h3 className="font-medium text-olimpo_blue text-3xl">{title}</h3>
@@ -19,14 +19,14 @@ function CardVantagem({ title, content, icon }) {
 export default function SectionVantagens() {
 	const cards = [
 		{
-			id: 'suporte',
+			id: 1,
 			title: 'Suporte',
 			content: 'Atendimento totalmente humanizado, com suporte 24 horas',
 			icon: <Headset weight={'fill'} size={40} color={'#E4AA15'} />,
 		},
 
 		{
-			id: 'taxas-flexiveis',
+			id: 2,
 			title: 'Taxas flexíveis',
 			content:
 				'Buscando sempre os menores juros e as melhores taxas para o cliente',
@@ -37,7 +37,7 @@ export default function SectionVantagens() {
 		},
 
 		{
-			id: 'parceria',
+			id: 3,
 			title: 'Parceria',
 			content: 'Parceria comprovada com os 16 maiores bancos do Brasil',
 			icon: <Bank weight={'fill'} size={40} color={'#E4AA15'} />,
@@ -46,7 +46,7 @@ export default function SectionVantagens() {
 
 	return (
 		<section
-			className="bg-slate-200 min-h-[53rem] h-fit p-10 flex justify-center items-center"
+			className="bg-slate-200 min-h-fit p-10 flex justify-center items-center"
 			style={{
 				backgroundImage: 'url(/atendente-olimpo-75x.png)',
 				backgroundRepeat: 'no-repeat',
