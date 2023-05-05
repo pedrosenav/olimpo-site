@@ -19,14 +19,12 @@ function CardVantagem({ title, content, icon }) {
 export default function SectionVantagens() {
 	const cards = [
 		{
-			id: 1,
 			title: 'Suporte',
 			content: 'Atendimento totalmente humanizado, com suporte 24 horas',
 			icon: <Headset weight={'fill'} size={40} color={'#E4AA15'} />,
 		},
 
 		{
-			id: 2,
 			title: 'Taxas flexíveis',
 			content:
 				'Buscando sempre os menores juros e as melhores taxas para o cliente',
@@ -37,7 +35,6 @@ export default function SectionVantagens() {
 		},
 
 		{
-			id: 3,
 			title: 'Parceria',
 			content: 'Parceria comprovada com os 16 maiores bancos do Brasil',
 			icon: <Bank weight={'fill'} size={40} color={'#E4AA15'} />,
@@ -60,8 +57,8 @@ export default function SectionVantagens() {
 				</h2>
 
 				<div className="max-w-fit gap-8 grid grid-cols-1 md:grid-cols-2">
-					{cards.map((card) => (
-						<CardVantagem key={card.id} {...card} />
+					{cards.map((card, i) => (
+						<CardVantagem key={i} {...card} />
 					))}
 				</div>
 			</div>

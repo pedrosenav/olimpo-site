@@ -1,14 +1,25 @@
-import { CaretDown } from '@phosphor-icons/react'
+import { CaretDown, CaretUp } from '@phosphor-icons/react'
+import { useState } from 'react'
 
 function Pergunta({ title, content }) {
+	const [isOpen, setIsOpen] = useState(false)
+
 	return (
-		<details className="cursor-pointer p-3 max-w-[50rem] border-b border-slate-300">
-			<summary className="flex justify-between gap-10 items-center">
+		<details className="py-6 px-3 max-w-[50rem] border-b border-slate-300">
+			<summary
+				onClick={() => setIsOpen(!isOpen)}
+				open={isOpen}
+				className="flex justify-between gap-4 items-center cursor-pointer"
+			>
 				<h3 className="sm:text-xl text-lg text-light text-olimpo_blue">
 					{title}
 				</h3>
 				<div>
-					<CaretDown size={25} color="#E4AA15" />
+					{isOpen ? (
+						<CaretUp size={25} color="#E4AA15" />
+						) : (
+						<CaretDown size={25} color="#E4AA15" />
+					)}
 				</div>
 			</summary>
 
@@ -30,7 +41,7 @@ export default function SectionPerguntas() {
 						Perguntas frequentes
 					</h2>
 				</div>
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col">
 					<Pergunta
 						title={'O que é o Empréstimo Consignado?'}
 						content={[
@@ -46,9 +57,10 @@ export default function SectionPerguntas() {
 					/>
 
 					<Pergunta
-						title={'Quem pode realizar o Empréstimo onsignado?'}
+						title={'Quem pode realizar o Empréstimo Consignado?'}
 						content={[
-							'Aposentados e pensionistas do INSS, servidores públicos ou pensionistas de órgãos municipais, estaduais e federais, militares ou pensionistas das Forças Armadas, desde que haja convênio estipulado entre a Olimpo e o Órgão em que você está enquadrado. Entre em contato com a Central de Atendimento para consultar o seu caso.',
+							'Aposentados e pensionistas do INSS, servidores públicos ou pensionistas de órgãos municipais, estaduais e federais, militares ou pensionistas das Forças Armadas, desde que haja convênio estipulado entre a Olimpo e o Órgão em que você está enquadrado.',
+							'Entre em contato com a Central de Atendimento para consultar o seu caso.',
 						]}
 					/>
 
@@ -70,8 +82,8 @@ export default function SectionPerguntas() {
 						title={'Quais os passos para a Portabilidade de Crédito?'}
 						content={[
 							'Conforme resolução 4.292, de 20/12/2013, você deve:',
-							'1.Solicitar à instituição origem de sua operação o valor de sua dívida e o prazo remanescente;',
-							'2.Informar os dados à nova instituição, bem como conceder autorização expressa para início do processo de portabilidade.',
+							'1. Solicitar à instituição origem de sua operação o valor de sua dívida e o prazo remanescente;',
+							'2. Informar os dados à nova instituição, bem como conceder autorização expressa para início do processo de portabilidade.',
 						]}
 					/>
 				</div>
