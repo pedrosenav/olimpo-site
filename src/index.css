@@ -23,10 +23,9 @@ details summary::marker {
 
 *:focus {
 	outline: none;
-	/* outline: 1px solid var(--olimpo_yellow); */
 }
 
 ::selection {
 	color: var(--olimpo_blue);
-	background: #e5aa1550;
+	background: #e5aa158e;
 }

@@ -43,7 +43,8 @@ export default function SectionVantagens() {
 
 	return (
 		<section
-			className="bg-slate-200 min-h-fit p-10 flex justify-center items-center"
+			id="vantagens"
+			className="bg-slate-200 min-h-fit px-10 py-20 flex justify-center items-center"
 			style={{
 				backgroundImage: 'url(/atendente-olimpo-75x.png)',
 				backgroundRepeat: 'no-repeat',

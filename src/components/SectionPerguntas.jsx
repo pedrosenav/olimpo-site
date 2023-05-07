@@ -17,7 +17,7 @@ function Pergunta({ title, content }) {
 				<div>
 					{isOpen ? (
 						<CaretUp size={25} color="#E4AA15" />
-						) : (
+					) : (
 						<CaretDown size={25} color="#E4AA15" />
 					)}
 				</div>
@@ -34,10 +34,10 @@ function Pergunta({ title, content }) {
 
 export default function SectionPerguntas() {
 	return (
-		<section className="bg-slate-50 h-fit p-10 flex justify-center items-start">
+		<section id='perguntas' className="bg-slate-50 h-fit px-10 py-20 flex justify-center items-start">
 			<div className="max-w-[98rem] w-full flex flex-col items-center gap-10">
 				<div>
-					<h2 className="font-semibold text-olimpo_blue text-4xl">
+					<h2 className="text-center font-semibold text-olimpo_blue text-4xl">
 						Perguntas frequentes
 					</h2>
 				</div>

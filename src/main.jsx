@@ -12,11 +12,11 @@ import SectionFormulario from './components/SectionFormulario'
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<Headers />
-		{/* <SectionPrincipal /> */}
-		{/* <SectionVantagens /> */}
-		{/* <SectionServicos /> */}
+		<SectionPrincipal />
+		<SectionVantagens />
+		<SectionServicos />
 		<SectionPerguntas />
-		{/* <SectionFormulario/> */}
-		{/* <Footer /> */}
+		<SectionFormulario/>
+		<Footer />
 	</React.StrictMode>
 )
