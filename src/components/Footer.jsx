@@ -59,7 +59,7 @@ export default function Footer() {
 				{
 					id: 'endereco',
 					content:
-						'R. Dr. Porciúncula, 395 - Venda da CruzSão Gonçalo - RJ, 24411-005',
+						'R. Dr. Porciúncula, 395 - Venda da Cruz São Gonçalo - RJ, 24411-005',
 					link: 'http://maps.google.com/?q=R. Dr. Porciúncula, 395 - Venda da Cruz, São Gonçalo - RJ, 24411-005',
 				},
 			],
