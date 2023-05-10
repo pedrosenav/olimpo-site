@@ -1,7 +1,7 @@
 import { CaretDown, CaretUp } from '@phosphor-icons/react'
 import { useState } from 'react'
 
-function Pergunta({ title, content }) {
+function Pergunta({ title, content = [] }) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
@@ -9,7 +9,7 @@ function Pergunta({ title, content }) {
 			<summary
 				onClick={() => setIsOpen(!isOpen)}
 				open={isOpen}
-				className="flex justify-between gap-4 items-center cursor-pointer"
+				className="flex justify-between gap-10 items-center cursor-pointer"
 			>
 				<h3 className="sm:text-xl text-lg text-light text-olimpo_blue">
 					{title}

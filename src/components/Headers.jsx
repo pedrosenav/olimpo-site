@@ -17,7 +17,7 @@ export default function Headers() {
 		{ id: 1, title: 'Vantagens', link: '#vantagens' },
 		{ id: 2, title: 'Serviços', link: '#servicos' },
 		{ id: 3, title: 'Ajuda', link: '#perguntas' },
-		{ id: 4, title: 'Contato', link: '#form' },
+		{ id: 4, title: 'Contato', link: '#contato' },
 	]
 
 	const [isOpen, setOpen] = useState(false)

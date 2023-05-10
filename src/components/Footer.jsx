@@ -13,14 +13,6 @@ function FooterItem({ content = '', link = '#', icon = null }) {
 	)
 }
 
-const person = {
-	firstName: 'Name',
-	lastName: 'Surname',
-	get fullName() { return this.firstName + ' ' + this.lastName }
-}
-
-console.log(person)
-
 export default function Footer() {
 	const footerLists = [
 		{
