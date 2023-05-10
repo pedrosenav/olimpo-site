@@ -24,10 +24,10 @@ export default function SectionPrincipal() {
 
 						<button
 							className="px-7 py-3 font-bold rounded-lg cursor-pointer
-				 bg-olimpo_yellow text-white 
-				 hover:bg-olimpo_blue transition-colors tracking-wider"
+							 bg-olimpo_yellow text-white 
+							 hover:bg-olimpo_blue transition-colors tracking-wider"
 						>
-							Simule já
+							<a href="#servicos">Quero ser cliente</a>
 						</button>
 					</div>
 				</div>

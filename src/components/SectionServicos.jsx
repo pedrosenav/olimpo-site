@@ -25,7 +25,9 @@ function CardServico({ icon, title, desc, message }) {
 			<p className="text-slate-500 flex-1">{desc}</p>
 
 			<a
-				href={`mailto:promotoraolimposuporte@gmail.com?subject=${title}&body=Eu quero um ${title}, como faço?`}
+				target="_blank"
+				rel="noreferrer"
+				href={`mailto:promotoraolimposuporte@gmail.com?subject=${title}&body=${message}`}
 			>
 				<button
 					className="tracking-wide font-light flex items-center justify-between w-full bg-olimpo_yellow hover:bg-olimpo_blue active:brightness-110 hover:text-white transition-colors text-olimpo_blue px-4 py-2 rounded-lg
@@ -45,77 +47,77 @@ export const servicos = [
 		title: 'Crédito consignado',
 		desc: 'Empréstimo com desconto automático em folha de pagamento',
 		icon: <Coins size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 2,
 		title: 'Financiamento de veículos',
 		desc: 'Empréstimo específico para a compra de veículos.',
 		icon: <CarProfile size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 3,
 		title: 'Novo crédito',
 		desc: 'Possibilidade de obter um novo empréstimo em cima de um já existente',
 		icon: <CreditCard size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 4,
 		title: 'Portabilidade',
 		desc: 'Transferência de dívida de uma instituição financeira para outra',
 		icon: <PhoneOutgoing size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 5,
 		title: 'Empréstimo',
 		desc: 'Operação financeira em que uma instituição empresta dinheiro a um cliente',
 		icon: <Money size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 6,
 		title: 'Financiamento',
 		desc: 'Modalidade de crédito para aquisição de bens e serviços',
 		icon: <Bank size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 7,
 		title: 'Crédito pessoal',
 		desc: 'Empréstimo para uso livre do cliente',
 		icon: <HandCoins size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 8,
 		title: 'FGTS',
 		desc: 'Fundo de Garantia por Tempo de Serviço para trabalhadores com carteira assinada',
 		icon: <PiggyBank size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 9,
 		title: 'SIAPE',
 		desc: 'Sistema Integrado de Administração de Recursos Humanos para servidores públicos federais',
 		icon: <Wallet size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 10,
 		title: 'Exército',
 		desc: 'Aposentadoria e benefícios para militares',
 		icon: <MedalMilitary size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 	{
 		id: 11,
 		title: 'Governo',
 		desc: 'Aposentadoria e benefícios para funcionários públicos',
 		icon: <Gavel size={32} color="#e4aa15" />,
-		message: '',
+		message: 'Estamos felizes em ter você conosco, digite aqui sua mensagem...',
 	},
 ]
 
