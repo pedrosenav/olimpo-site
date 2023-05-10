@@ -55,7 +55,7 @@ export default function SectionFormulario() {
 						</form>
 					</div>
 					<div
-						className="hidden lg:block max-w-[45rem] min-h-[10rem] w-full"
+						className="hidden lg:block max-w-[45rem] w-full"
 						style={{
 							backgroundImage: 'url(/equipe-75x.jpg)',
 							backgroundRepeat: 'no-repeat',

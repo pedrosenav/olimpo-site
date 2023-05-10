@@ -18,16 +18,6 @@ function FooterItem({ content = '', link = '#', icon = null }) {
 	)
 }
 
-const person = {
-	firstName: 'Name',
-	lastName: 'Surname',
-	get fullName() {
-		return this.firstName + ' ' + this.lastName
-	},
-}
-
-console.log(person)
-
 export default function Footer() {
 	const footerLists = [
 		{
@@ -74,7 +64,7 @@ export default function Footer() {
 				{
 					id: 'endereco',
 					content:
-						'R. Dr. Porciúncula, 395 - Venda da CruzSão Gonçalo - RJ, 24411-005',
+						'Rua Dr. Porciúncula, 395 - Venda da Cruz São Gonçalo - RJ, 24411-005',
 					link: 'http://maps.google.com/?q=R. Dr. Porciúncula, 395 - Venda da Cruz, São Gonçalo - RJ, 24411-005',
 				},
 			],

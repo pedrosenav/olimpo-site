@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		<SectionVantagens />
 		<SectionServicos />
 		<SectionPerguntas />
-		{/* <SectionFormulario/> */}
+		<SectionFormulario/>
 		<Footer />
 	</React.StrictMode>
 )
